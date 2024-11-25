@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Page Not Found</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" fullscreen>
+  <div class="page-not-found-container">
+    <ion-img src="../../assets/error-page.png" alt="404 Error" class="error-image"></ion-img>
+
+    <h1>Oops! Page Not Found</h1>
+    <p>
+      The page you're looking for doesn't exist or has been moved.
+    </p>
+
+    <ion-button expand="block" color="tertiary" routerLink="/home">
+      Go to Home
+    </ion-button>
+
+    <ion-button expand="block" fill="outline" color="medium" (click)="goBack()">
+      Go Back
+    </ion-button>
+  </div>
+</ion-content>
